@@ -4,7 +4,7 @@
 target-version = "py310"
 
 # Line length
-line-length = 79
+line-length = 99
 
 # Indentation width
 indent-width = 4
