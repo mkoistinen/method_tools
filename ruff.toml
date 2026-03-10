@@ -150,7 +150,7 @@ unfixable = []
 # isort configuration
 combine-as-imports = true
 force-wrap-aliases = true
-known-first-party = ["method_tools"]
+known-first-party = ["lru_method_cache"]
 known-third-party = ["pytest"]
 lines-after-imports = 2
 section-order = [

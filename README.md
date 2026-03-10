@@ -42,7 +42,7 @@ library. Here are some references to learn more.
 collected, its cache is automatically cleaned up via `weakref.finalize`.
 
 ```python
-from method_tools import lru_method_cache
+from lru_method_cache import lru_method_cache
 
 class MyClass:
     @lru_method_cache(maxsize=128)
@@ -77,7 +77,7 @@ obj.compute(a=1, b=2)   # hit — same as above
 ## Usage
 
 ```python
-from method_tools import lru_method_cache
+from lru_method_cache import lru_method_cache
 
 class MyClass:
     # Without parentheses (defaults: max_size=128, typed=False)

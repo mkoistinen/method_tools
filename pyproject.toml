@@ -40,7 +40,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["method_tools"]
+packages = ["lru_method_cache"]
 
 [tool.pytest.ini_options]
-testpaths = ["method_tools/tests"]
+testpaths = ["lru_method_cache/tests"]

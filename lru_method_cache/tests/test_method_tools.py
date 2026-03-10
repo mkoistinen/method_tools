@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING, Any
 
 import pytest
 
-from method_tools.method_tools import (
+from lru_method_cache.lru_method_cache import (
     _MethodCacheDescriptor,  # pyright: ignore[reportPrivateUsage]
     lru_method_cache,
 )
 
 
 if TYPE_CHECKING:
-    from method_tools.method_tools import (
+    from lru_method_cache.lru_method_cache import (
         _CacheInfo,  # pyright: ignore[reportPrivateUsage]
     )
 
