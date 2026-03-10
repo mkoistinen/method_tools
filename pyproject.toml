@@ -41,6 +41,10 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["lru_method_cache"]
+exclude = ["lru_method_cache/tests"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["lru_method_cache/tests"]
 
 [tool.pytest.ini_options]
 testpaths = ["lru_method_cache/tests"]
