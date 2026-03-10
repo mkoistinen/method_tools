@@ -141,7 +141,7 @@ There are certain other clever solutions for the issue of using `lru_cache` on c
 | `functools.lru_cache` | No | No | No | Yes |
 | [`methodtools`](https://github.com/clee704/methodtools)`.lru_cache` | Yes | No | Yes | Yes |
 | [`cachetools`](https://github.com/tkem/cachetools) + manual wiring | Yes | No | Manual | Manual |
-| **[`method_tools`](https://github.com/mkoistinen/lru-method-cache)`.lru_method_cache`** | **Yes** | **Yes** | **Yes** | **Yes** |
+| **[`lru-method-cache`](https://github.com/mkoistinen/lru-method-cache)`.lru_method_cache`** | **Yes** | **Yes** | **Yes** | **Yes** |
 
 ## Design philosophy
 
