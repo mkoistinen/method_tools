@@ -201,7 +201,6 @@ def lru_method_cache(
         @lru_method_cache(max_size=256, typed=True)
         def get_value(self, key): ...
     """
-
     def _wrap(m: Any) -> _MethodCacheDescriptor:
         if isinstance(m, (classmethod, staticmethod)):
             kind = type(m).__name__

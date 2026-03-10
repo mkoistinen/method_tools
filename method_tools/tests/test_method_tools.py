@@ -330,7 +330,8 @@ class TestClassmethodStaticmethodRejection:
             class _Bad:  # pyright: ignore[reportUnusedClass]
                 @lru_method_cache
                 @classmethod
-                def foo(cls) -> None: ...
+                def foo(cls) -> None:
+                    ...
 
     def test_rejects_staticmethod(self) -> None:
         """Test that a TypeError is raised on a staticmethod."""
@@ -339,7 +340,8 @@ class TestClassmethodStaticmethodRejection:
             class _Bad:  # pyright: ignore[reportUnusedClass]
                 @lru_method_cache
                 @staticmethod
-                def foo() -> None: ...
+                def foo() -> None:
+                    ...
 
     def test_rejects_classmethod_with_args(self) -> None:
         """Test that a TypeError is raised on a classmethod with args."""
@@ -348,7 +350,8 @@ class TestClassmethodStaticmethodRejection:
             class _Bad:  # pyright: ignore[reportUnusedClass]
                 @lru_method_cache(max_size=64)
                 @classmethod
-                def foo(cls) -> None: ...
+                def foo(cls) -> None:
+                    ...
 
 
 class TestWeakrefWarning:
@@ -356,7 +359,6 @@ class TestWeakrefWarning:
 
     def test_warns_on_non_weakrefable_instance(self) -> None:
         """Test that warnings are raised if the class instance uses slots."""
-
         class NoWeakref:
             __slots__ = ("call_count",)
 
